@@ -5,28 +5,46 @@
 # File Instructions：
 
 PU-DED: This folder contains the dangling detection component;
-	│  Dual_dangling.py
-	Used to classify dangling and matchable entities. It includes the whole process of data input, training and testing of the model. It requires the use of a function interface written in the following files. 
-	│  evaluate.py
-	A collection of functional interfaces written to test the accuracy of the model.
-	│  layer.py
-	A collection of functional interfaces written to constitute the component of the model.
-	│  utils.py
-	A collection of functional interfaces written for data input.
+
+​	│  Dual_dangling.py	
+
+​	Used to classify dangling and matchable entities. It includes the whole process of data input, training and testing of the model. It requires the use of a function interface written in the following files.
+
+
+​	│  evaluate.py
+
+​	A collection of functional interfaces written to test the accuracy of the model.
+
+​	│  layer.py
+
+​	A collection of functional interfaces written to constitute the component of the model.
+
+​	│  utils.py
+
+​	A collection of functional interfaces written for data input.
 
 EA: This folder contains the Entity Alignment component;
-	│  Dual_align.py
-	Used to employ entity alignment task on different datasets. It includes the whole process of data input, training and testing of the model. It requires the use of a function interface written in the following files. 
-	│  evaluate.py
-	A collection of functional interfaces written to test the accuracy of the model.
-	│  layer.py
-	A collection of functional interfaces written to constitute the component of the model.
-	│  utils.py
-	A collection of functional interfaces written for data input.
+
+​	│  Dual_align.py
+
+​	Used to employ entity alignment task on different datasets. It includes the whole process of data input, training and testing of the model. It requires the use of a function interface written in the following files. 
+
+​	│  evaluate.py
+
+​	A collection of functional interfaces written to test the accuracy of the model.
+
+​	│  layer.py
+
+​	A collection of functional interfaces written to constitute the component of the model.
+
+​	│  utils.py
+
+​	A collection of functional interfaces written for data input.
 
 # Run This Code
 
 First you need to execute **Dual_dangling.py** for matchable entity extraction. At this point, the program generates the extracted entity file for the corresponding datasets as red files in **Program Directory Structure**. Then, you should copy this file to the EA directory. These files will be an important part of the alignment in the second step. Then, you could run **Dual_align.py** for entity alignment and the task execution is complete. 
+
 While for datasets with a small number of entities like **GA16K** with one-side dangling entities, you can directly execute the joint learning version of the method, as shown in **Dual_joint.py**.
 
 # Postscript
