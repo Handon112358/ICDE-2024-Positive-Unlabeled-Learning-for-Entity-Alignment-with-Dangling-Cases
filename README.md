@@ -1,7 +1,135 @@
 # Program Directory Structure
-
- (red files represent files that are generated after the program is run):
-
+ ('extract_' files represent files that are generated after the program is run):
+```
+├─PU-DED
+│  Dual_dangling.py
+│  evaluate.py
+│  layer.py
+│  test.py
+│  utils.py
+│  └──data
+│     ├─dbp2.0
+│     │  ├─fr_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │        extract_node_1
+│     │  │        extract_node_2
+│     │  │        extract_node
+│     │  │
+│     │  ├─ja_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │        extract_node_1
+│     │  │        extract_node_2
+│     │  │        extract_node
+│     │  │
+│     │  └─ zh_en
+│     │           ent_ids_1
+│     │           ent_ids_2
+│     │           ref_ent_ids 
+│     │           triples_1
+│     │           triples_2 
+│     │           extract_node_1
+│     │           extract_node_2
+│     │           extract_node
+│     │
+│     └─MedED
+│        ├─fr_en
+│        │        ref_ent_ids
+│        │        sup_ent_ids
+│        │        triples_1
+│        │        triples_2 
+│        │        extract_node_1
+│        │        extract_node_2
+│        │        extract_node
+│        │
+│        └─ es_en
+│                 ref_ent_ids
+│                 sup_ent_ids
+│                 triples_1
+│                 triples_2 
+│                 extract_node_1
+│                 extract_node_2
+│                 extract_node
+│  
+├─EA
+│  Dual_align.py
+│  Dual_joint.py
+│  layer.py
+│  test.py
+│  utils.py
+│  └──data
+│     ├─dbp2.0
+│     │  ├─fr_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        rel_ids_1
+│     │  │        rel_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │        extract_node_1
+│     │  │        extract_node_2
+│     │  │        extract_node
+│     │  │
+│     │  ├─ja_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        rel_ids_1
+│     │  │        rel_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │        extract_node_1
+│     │  │        extract_node_2
+│     │  │        extract_node
+│     │  │
+│     │  └─ zh_en
+│     │           ent_ids_1
+│     │           ent_ids_2
+│     │           rel_ids_1
+│     │           rel_ids_2
+│     │           ref_ent_ids 
+│     │           triples_1
+│     │           triples_2 
+│     │           extract_node_1
+│     │           extract_node_2
+│     │           extract_node
+│     │
+│     ├─MedED
+│     │  ├─fr_en
+│     │  │        ref_ent_ids
+│     │  │        sup_ent_ids
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │        extract_node_1
+│     │  │        extract_node_2
+│     │  │        extract_node
+│     │  │
+│     │  └─ es_en
+│     │           ref_ent_ids
+│     │           sup_ent_ids
+│     │           triples_1
+│     │           triples_2 
+│     │           extract_node_1
+│     │           extract_node_2
+│     │           extract_node
+│     │ 
+│     └─GA16K
+│             ref_ent_ids
+│             sup_ent_ids
+│             ref_pairs
+│             sup_pairs
+│             triples_1
+│             triples_2
+└──readme.md
+```
 # File Instructions：
 
 PU-DED: This folder contains the dangling detection component;
@@ -43,7 +171,7 @@ EA: This folder contains the Entity Alignment component;
 
 # Run This Code
 
-First you need to execute **Dual_dangling.py** for matchable entity extraction. At this point, the program generates the extracted entity file for the corresponding datasets as red files in **Program Directory Structure**. Then, you should copy this file to the EA directory. These files will be an important part of the alignment in the second step. Then, you could run **Dual_align.py** for entity alignment and the task execution is complete. 
+First you need to execute **Dual_dangling.py** for matchable entity extraction. At this point, the program generates the extracted entity file for the corresponding datasets as 'extract_' files in **Program Directory Structure**. Then, you should copy this file to the EA directory. These files will be an important part of the alignment in the second step. Then, you could run **Dual_align.py** for entity alignment and the task execution is complete. 
 
 While for datasets with a small number of entities like **GA16K** with one-side dangling entities, you can directly execute the joint learning version of the method, as shown in **Dual_joint.py**.
 
