@@ -10,6 +10,58 @@
 │  test.py
 │  utils.py
 │  └──data
+│     ├─DBP15K
+│     │  ├─fr_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │
+│     │  ├─ja_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │
+│     │  └─ zh_en
+│     │           ent_ids_1
+│     │           ent_ids_2
+│     │           ref_ent_ids 
+│     │           triples_1
+│     │           triples_2
+│     │
+│     ├─DBP2.0-minus
+│     │  ├─DBP2.0-JA-EN-minus_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │
+│     │  └─ DBP2.0-ZH-EN-minus_en
+│     │           ent_ids_1
+│     │           ent_ids_2
+│     │           ref_ent_ids 
+│     │           triples_1
+│     │           triples_2
+│     │
+│     ├─DBP2.0-plus
+│     │  ├─DBP2.0-JA-EN-plus_en
+│     │  │        ent_ids_1
+│     │  │        ent_ids_2
+│     │  │        ref_ent_ids 
+│     │  │        triples_1
+│     │  │        triples_2 
+│     │  │
+│     │  └─ DBP2.0-ZH-EN-plus_en
+│     │           ent_ids_1
+│     │           ent_ids_2
+│     │           ref_ent_ids 
+│     │           triples_1
+│     │           triples_2
+│     │ 
 │     ├─dbp2.0
 │     │  ├─fr_en
 │     │  │        ent_ids_1
