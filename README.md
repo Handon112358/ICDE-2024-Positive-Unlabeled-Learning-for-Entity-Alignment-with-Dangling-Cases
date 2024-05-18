@@ -73,10 +73,25 @@
 │     │  │  │        triples_2
 │     │  │  │
 │     │  │  ├─0.15_en
+│     │  │  │        ent_ids_1
+│     │  │  │        ent_ids_2
+│     │  │  │        ref_ent_ids 
+│     │  │  │        triples_1
+│     │  │  │        triples_2
 │     │  │  │
 │     │  │  ├─0.2_en
+│     │  │  │        ent_ids_1
+│     │  │  │        ent_ids_2
+│     │  │  │        ref_ent_ids 
+│     │  │  │        triples_1
+│     │  │  │        triples_2
 │     │  │  │
 │     │  │  └─0.25_en
+│     │  │           ent_ids_1
+│     │  │           ent_ids_2
+│     │  │           ref_ent_ids 
+│     │  │           triples_1
+│     │  │           triples_2
 │     │  │
 │     │  └─ GA-ZH
 │     │     ├─0.1_en
@@ -87,10 +102,25 @@
 │     │     │        triples_2
 │     │     │
 │     │     ├─0.15_en
+│     │     │        ent_ids_1
+│     │     │        ent_ids_2
+│     │     │        ref_ent_ids 
+│     │     │        triples_1
+│     │     │        triples_2
 │     │     │
 │     │     ├─0.2_en
+│     │     │        ent_ids_1
+│     │     │        ent_ids_2
+│     │     │        ref_ent_ids 
+│     │     │        triples_1
+│     │     │        triples_2
 │     │     │
 │     │     └─0.25_en
+│     │              ent_ids_1
+│     │              ent_ids_2
+│     │              ref_ent_ids 
+│     │              triples_1
+│     │              triples_2
 │     │
 │     ├─GA16K
 │     │        ref_ent_ids
