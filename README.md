@@ -5,6 +5,7 @@
 ```
 ├─PU-DED
 │  Dual_dangling.py
+│  Dual_dangling_auto.py
 │  evaluate.py
 │  layer.py
 │  test.py
@@ -61,7 +62,44 @@
 │     │           ref_ent_ids 
 │     │           triples_1
 │     │           triples_2
-│     │ 
+│     │
+│     ├─GA-DBP15K
+│     │  ├─GA-EN
+│     │  │  ├─0.1_en
+│     │  │  │        ent_ids_1
+│     │  │  │        ent_ids_2
+│     │  │  │        ref_ent_ids 
+│     │  │  │        triples_1
+│     │  │  │        triples_2
+│     │  │  │
+│     │  │  ├─0.15_en
+│     │  │  │
+│     │  │  ├─0.2_en
+│     │  │  │
+│     │  │  └─0.25_en
+│     │  │
+│     │  └─ GA-ZH
+│     │     ├─0.1_en
+│     │     │        ent_ids_1
+│     │     │        ent_ids_2
+│     │     │        ref_ent_ids 
+│     │     │        triples_1
+│     │     │        triples_2
+│     │     │
+│     │     ├─0.15_en
+│     │     │
+│     │     ├─0.2_en
+│     │     │
+│     │     └─0.25_en
+│     │
+│     ├─GA16K
+│     │        ref_ent_ids
+│     │        ref_pairs
+│     │        sup_ent_ids
+│     │        sup_pairs
+│     │        triples_1
+│     │        triples_2 
+│     │
 │     ├─dbp2.0
 │     │  ├─fr_en
 │     │  │        ent_ids_1
