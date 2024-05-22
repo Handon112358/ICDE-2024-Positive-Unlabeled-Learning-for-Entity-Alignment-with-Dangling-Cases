@@ -188,56 +188,36 @@
 │     │        triples_1
 │     │        triples_2 
 │     │
-│     ├─dbp2.0
-│     │  ├─fr_en
-│     │  │        ent_ids_1
-│     │  │        ent_ids_2
-│     │  │        ref_ent_ids 
-│     │  │        triples_1
-│     │  │        triples_2 
-│     │  │        extract_node_1
-│     │  │        extract_node_2
-│     │  │        extract_node
-│     │  │
-│     │  ├─ja_en
-│     │  │        ent_ids_1
-│     │  │        ent_ids_2
-│     │  │        ref_ent_ids 
-│     │  │        triples_1
-│     │  │        triples_2 
-│     │  │        extract_node_1
-│     │  │        extract_node_2
-│     │  │        extract_node
-│     │  │
-│     │  └─ zh_en
-│     │           ent_ids_1
-│     │           ent_ids_2
-│     │           ref_ent_ids 
-│     │           triples_1
-│     │           triples_2 
-│     │           extract_node_1
-│     │           extract_node_2
-│     │           extract_node
-│     │
-│     └─MedED
+│     └─dbp2.0
 │        ├─fr_en
-│        │        ref_ent_ids
-│        │        sup_ent_ids
+│        │        ent_ids_1
+│        │        ent_ids_2
+│        │       ref_ent_ids 
 │        │        triples_1
 │        │        triples_2 
 │        │        extract_node_1
 │        │        extract_node_2
 │        │        extract_node
 │        │
-│        └─ es_en
-│                 ref_ent_ids
-│                 sup_ent_ids
+│        ├─ja_en
+│        │        ent_ids_1
+│        │       ent_ids_2
+│        │        ref_ent_ids 
+│        │        triples_1
+│        │        triples_2 
+│        │        extract_node_1
+│        │        extract_node_2
+│        │        extract_node
+│        │
+│        └─ zh_en
+│                 ent_ids_1
+│                 ent_ids_2
+│                 ref_ent_ids 
 │                 triples_1
 │                 triples_2 
 │                 extract_node_1
 │                 extract_node_2
 │                 extract_node
-│  
 ├─EA
 │  Dual_align.py
 │  Dual_joint.py
@@ -282,25 +262,6 @@
 │     │           extract_node_2
 │     │           extract_node
 │     │
-│     ├─MedED
-│     │  ├─fr_en
-│     │  │        ref_ent_ids
-│     │  │        sup_ent_ids
-│     │  │        triples_1
-│     │  │        triples_2 
-│     │  │        extract_node_1
-│     │  │        extract_node_2
-│     │  │        extract_node
-│     │  │
-│     │  └─ es_en
-│     │           ref_ent_ids
-│     │           sup_ent_ids
-│     │           triples_1
-│     │           triples_2 
-│     │           extract_node_1
-│     │           extract_node_2
-│     │           extract_node
-│     │ 
 │     └─GA16K
 │             ref_ent_ids
 │             sup_ent_ids
@@ -319,6 +280,10 @@
 ##### 	│  Dual_dangling.py	
 
 ​	Used to classify dangling and matchable entities. It includes the whole process of data input, training and testing of the model. It requires the use of a function interface written in the following files.
+
+##### 	│  Dual_dangling_auto.py	
+
+​ The iPULE algorithm version of Dual_dangling.py.
 
 ##### 	│  evaluate.py
 
