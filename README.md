@@ -1,7 +1,9 @@
 
-# Poster: Lambda: Learning Matchable Prior For Entity Alignment with Unlabeled Dangling Cases
+# NeurIPS 2024 Poster: 
 
-![Uploading Poster_NeurIPS_01.png…]()
+## Lambda: Learning Matchable Prior For Entity Alignment with Unlabeled Dangling Cases
+
+![poster]([https://github.com/Handon112358/Guard-GAKG/blob/main/images/PlanB-vector_search_engine.png](https://github.com/Handon112358/NeurIPS_2024_Learning-Matchable-Prior-For-Entity-Alignment-with-Unlabeled-Dangling-Cases/blob/main/Poster_NeurIPS_01.png))
 
 # Program Directory Structure
 
